@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.conra.myapplication.CardActivity">
+
+    <TextView
+        android:labelFor="@+id/card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/card_number" />
+
+    <EditText
+        android:id="@+id/card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nextFocusRight="@+id/card_month"
+        android:nextFocusDown="@+id/card_month"
+        android:inputType="number" />
+
+    <TextView
+        android:labelFor="@+id/card_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/card_date" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/card_month"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:nextFocusLeft="@+id/card_number"
+            android:nextFocusDown="@+id/card_year"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card_separator" />
+
+        <EditText
+            android:id="@+id/card_year"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:nextFocusUp="@+id/card_month"
+            android:nextFocusRight="@+id/card_cvv"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <TextView
+        android:labelFor="@+id/card_cvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/card_cvv" />
+
+    <EditText
+        android:id="@+id/card_cvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nextFocusUp="@+id/card_year"
+        android:nextFocusLeft="@+id/card_year"
+        android:nextFocusRight="@+id/pay"
+        android:imeOptions="actionDone"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:nextFocusLeft="@+id/card_cvv"
+        android:text="@string/pay" />
+
+</LinearLayout>

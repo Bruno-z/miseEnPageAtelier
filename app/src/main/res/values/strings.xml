@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="goto_card">Carte Bleue</string>
+    <string name="firstname">Prénom</string>
+    <string name="lastname">Nom</string>
+    <string name="login">Email</string>
+    <string name="password">Mot de passe</string>
+    <string name="connect">Me connecter</string>
+    <string name="card_number">Numéro</string>
+    <string name="card_date">Date</string>
+    <string name="card_cvv">CVV</string>
+    <string name="card_separator">/</string>
+    <string name="pay">Payer</string>
+    <string name="error_firstname_empty">Merci de renseigner votre prénom !</string>
+    <string name="error_firstname_invalid">Votre prénom ne doit contenir que des caractères alphabétiques !</string>
+    <string name="error_lastname_empty">Merci de renseigner votre nom !</string>
+    <string name="error_lastname_invalid">Votre nom ne doit contenir que des caractères alphabétiques !</string>
+    <string name="error_login_empty">Merci de renseigner votre email !</string>
+    <string name="error_login_invalid">Votre email est incorrect !</string>
+    <string name="error_password_empty">Merci de reseigner votre mot de passe !</string>
+    <string name="error_password_minlength">Votre mot de passe doit faire au moins 8 caractères !</string>
+    <string name="error_password_hasdigit">Votre mot de passe doit contenir au moins un chiffre !</string>
+    <string name="error_digit_only">Ce champs ne doit contenir que des chiffres</string>
+    <string name="error_length">Ce champs doit contenir %1d chiffres</string>
+    <string name="error_empty">Ce champs ne doit pas être vide</string>
+    <string name="error_month">Mois incorrect</string>
+</resources>
